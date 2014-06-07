@@ -1,0 +1,7 @@
+[user]
+	name = Yuki Yano
+	email = yuki_yano@me.com
+[core]
+	editor = emacs
+[color]
+	ui = true

@@ -1,0 +1,22 @@
+# set default encoding as utf-8
+defencoding utf-8
+# set scroll buffer as 10000
+defscrollback 10000
+# for less,vim,etc...
+altscreen on
+# change escape key to Ctrl+z
+escape ^Zz
+# turn off vistual ebell
+vbell off
+# enable auto detach if terminal halt
+autodetach on
+# restrict startup message
+startup_message off
+# caption setting
+caption always "%{= wb} %-w%{=bu dg}%n %t%{-}%+w %= %{=b wk} %{=b wb}%y/%m/%d(%D) %{=b wm}%c"
+# key bindings
+bind c colon 'screen -t'
+bind t title
+bind k kill
+bind p prev
+bind n next

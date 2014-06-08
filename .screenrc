@@ -15,7 +15,7 @@ startup_message off
 # caption setting
 caption always "%{= wb} %-w%{=bu dg}%n %t%{-}%+w %= %{=b wk} %{=b wb}%y/%m/%d(%D) %{=b wm}%c"
 # key bindings
-bind c colon 'screen -t'
+bind c colon 'screen -t '
 bind t title
 bind k kill
 bind p prev

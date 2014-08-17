@@ -1,10 +1,10 @@
-export PATH=/Applications/android-sdk-mac_x86/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+#export PATH=/usr/local/bin:$PATH
 export HISTCONTROL=ignoreboth
 export LSCOLORS=gxfxcxdxbxegedabagacad
-export EDITOR='emacs'
-export PS1="\u@\h:\w\\[\033[0;31m\]$\[\033[0m\] "
+export EDITOR='vi'
+export PS1="\u@\h:\w\[\033[0;31m\]$\[\033[0m\] "
 if [ "$TERM" == "screen" ]; then
-    export PS1='\u@\h:$WINDOW:\w\\[\033[0;31m\]$\[\033[0m\] '
+    export PS1='\u@\h:$WINDOW:\w\[\033[0;36m\]$\[\033[0m\] '
 fi
 export _JAVA_OPTIONS=-Dfile.encoding=UTF-8
 

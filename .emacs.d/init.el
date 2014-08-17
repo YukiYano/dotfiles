@@ -1,7 +1,11 @@
 ;; add base load-path
 (add-to-list 'load-path "~/.emacs.d/conf")
 (add-to-list 'load-path "~/.emacs.d/elisp")
-(add-to-list 'load-path "~/.emacs.d/auto-install")
+(let ((default-directory "~/.emacs.d/elisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
+(add-to-list 'load-path "~/.emacs.d/repos")
+(let ((default-directory "~/.emacs.d/repos/"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 ;; init-loader
 (require 'init-loader)

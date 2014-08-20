@@ -1,10 +1,10 @@
 ;; use color-theme "dark-laptop"
-;(when (require 'color-theme nil t)
-;  (color-theme-initialize)
-;  (color-theme-dark-laptop))
+(when (require 'color-theme nil t)
+  (color-theme-initialize)
+  (color-theme-dark-laptop))
 
 ;; transmissive window
-;(add-to-list 'default-frame-alist '(alpha . 80))
+(add-to-list 'default-frame-alist '(alpha . 80))
 
 ;; linum to show line number
 (when (require 'linum nil t)
@@ -12,12 +12,11 @@
   (setq linum-format "%5d "))
 
 ;; use elscreen
-;(when (require 'elscreen nil t))
+(when (require 'elscreen nil t))
 
-;; use sense-region
-;(autoload 'sense-region-on "sense-region"
-;  "System to toggle region and rectangle." t nil)
-;(sense-region-on)
+;; cua-mode
+(cua-mode t)
+(setq cua-enable-cua-keys nil)
 
 ;; visualize TAB and ZENKAKU-space
 (when (require 'jaspace nil t)

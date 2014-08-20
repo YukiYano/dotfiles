@@ -19,10 +19,7 @@
 
 ;;; for Mac,  cmd key -> meta
 (when (eq system-type 'darwin)
-  (setq mac-option-key-is-meta nil
-	mac-command-key-is-meta t
-	mac-command-modifier 'meta
-	mac-option-modifier 'none))
+  (setq ns-command-modifier (quote meta)))
 
 ;; change font-size by \C-+ and \C--
 ;; http://d.hatena.ne.jp/buchio/20110525

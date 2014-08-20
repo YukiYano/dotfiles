@@ -8,7 +8,7 @@
 (setq make-backup-files nil)
 
 ;; skip startup message
-;(setq inhibit-startup-message t)
+(setq inhibit-startup-message t)
 
 ;; emphasize blankets
 (show-paren-mode t)
@@ -27,6 +27,9 @@
 
 ;; expand tab to space
 (setq-default tab-width 8 indent-tabs-mode nil)
+
+;; disable bell
+(setq ring-bell-function 'ignore)
 
 ;; hilight current line
 (defface hlline-face
